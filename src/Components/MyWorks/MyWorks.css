@@ -1,0 +1,127 @@
+.myWorks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.myWorks .title {
+    color: var(--mark-text);
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+.myWorks .worksList {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.myWorks .worksList .block {
+    width: 500px;
+    padding: 20px;
+    padding-right: 25px;
+    box-shadow: 0 .05rem 0.5rem var(--color-text) !important;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    position: relative;
+
+    font: normal normal normal 14px/1 FontAwesome;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+.myWorks .worksList .block::before {
+    content: "\f011";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    box-shadow: 0 .09rem .5rem var(--color-text) !important;
+    border: .5px solid var(--color-text);
+    background-color: transparent;
+    border-radius: 50%;
+    right: .2%;
+    align-items: center;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: translateY(-50%) rotate(-90deg);
+    cursor: pointer;
+}
+.myWorks .worksList .block::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 4px solid #000;
+    border-radius: 50%;
+    align-items: center;
+    left: 1%;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;  
+    transform: translateY(-50%) rotate(-90deg);
+}
+.myWorks .worksList .block img {
+    width: 100%;
+}
+
+.planshet .content {
+    /* border: 1px solid var(--background-item); */
+    background-color: black;
+    position: relative;
+}
+
+.planshet .navbarPlanshet {
+    top: 0;
+    width: 100%;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    /* background-image: linear-gradient(to right, #0070d9, #009dff); */
+    margin: auto;
+    /* background-color:#fff; */
+    margin-bottom: 3px;
+    margin-bottom: 0;
+}
+
+.planshet .navbarPlanshet .news ,.planshet .navbarPlanshet .indicators {
+    margin-right: 5px;
+    display: flex;
+    margin-bottom: 0;
+    padding: 4px;
+    align-items: center;
+}
+.planshet .navbarPlanshet ul {
+    display: flex;
+    gap: 10px;
+}
+
+.planshet .navbarPlanshet ul li {
+    color: var(--color-text);
+    font-size: 10px;
+    list-style: none;
+}
+.worksList .css-doq0dk .css-1fzpoyk{
+    padding: 0;
+}
+
+@media screen and (max-width:980px) {
+        .myWorks .worksList .worksTable{
+            width: 100%!important;
+        }
+}

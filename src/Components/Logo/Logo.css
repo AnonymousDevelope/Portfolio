@@ -1,0 +1,12 @@
+.navbar-brand-1{
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-brand-1 .brand .first-cl{
+    color: var(--mark-text);
+}
+.navbar-brand-1 .brand .middle-cl{
+    color: var(--color-text);
+}

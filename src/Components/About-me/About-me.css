@@ -1,0 +1,158 @@
+.AboutMe{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+.AboutMe .content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.AboutMe .content .author{
+    text-transform: capitalize;
+    font-size: 43px;
+    font-weight: bold;
+    color: var(--mark-text);
+    margin-bottom: 6px;
+    /* letter-spacing: 0.2rem; */
+}
+.AboutMe .content .job{
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--color-text);
+    margin-bottom: 6px;
+}
+.AboutMe .content .inform{
+    text-transform: capitalize;
+    font-size: auto;
+    font-weight: 300;
+    color: var(--color-text);
+    width: 60%;
+    line-height: 23px;
+}
+/*  */
+/* 50% image part */
+.AboutMe .image {
+    background: url("../../assets/images/background_for_img.png") round;
+    background-size: contain;
+    width: 100%;
+    background-position: 50%;
+    position: relative;
+
+    /* background-clip: content-box; */
+}
+.AboutMe .image .imagesShape{
+    width: 100%; 
+}
+.AboutMe .image .imagesShape .first{
+    background: url("../../assets/images/First.png") no-repeat;
+    height: 70%;
+    background-size: contain;
+    width: 260px;
+    left: 52%;
+    top: 49%;
+    transform: translate(-50%,-50%) rotate(-10deg);
+    right: 50%;
+    position: absolute;
+    z-index: 100;
+}
+.AboutMe .image .imagesShape .middle{
+    background: url("../../assets/images/Middle.png") no-repeat;
+    height: 66%;
+    background-size: contain;
+    width: 250px;
+    opacity: 0.8;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(333deg);
+    right: 50%;
+    z-index: 50;
+    position: absolute;
+}
+.AboutMe .image .imagesShape .last{
+    background: url("../../assets/images/Last.png") no-repeat;
+    height: 65%;
+    background-size: contain;
+    width: 250px;
+    opacity: 0.8;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(24deg);
+    right: 50%;
+    position: absolute;
+}
+.block_2{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin: 0 auto;
+    width:85%;
+}
+.AboutMe .block_2 .img_title_1{
+    height: 60px;
+    width: 60px;
+    background: url("../../assets//images/Last.png") no-repeat;
+    background-size: contain;
+}
+.AboutMe .block_2 .about_me .text{
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 85%;
+    border: 1px solid none;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    background-color: var(--background-item);
+}
+.AboutMe .block_2 .about_me{
+    width: 100%;
+    margin: 0 auto;
+    gap: 35px;
+    color: var(--color-text);
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}  
+.block_1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+}
+@media screen and (max-width:980px) {
+    .AboutMe{
+        height: 800px;
+    }
+    .AboutMe .block_1 {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .AboutMe .block_1 .content {
+        /* width: max-content; */
+        width: max-content;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        /* align-items: center; */
+    }
+    .AboutMe .block_1 .image{
+        height: inherit;
+        background-size: contain;
+    }
+     .AboutMe .block_2{
+        margin-top: 80px;
+        margin-bottom: 80px;
+     }
+}
+/* 644px uchun ham ko'rib qo'yish kerak */

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Poppins:wght@500&display=swap");
+:root {
+  --background:#1B1A17;
+  --background-item:#1F1E1B;
+  --mark-text:#FF8303;
+  --color-text:#F0E3CA; }
+
+/* Rectangle 5 */
+/* Rectangle 7 */
+/* Rectangle 5 */
+* {
+  margin: 0; }
+
+.page {
+  margin: 0 auto;
+  width: 100%;
+  height: max-content;
+  overflow-x: hidden;
+  background-color: #1B1A17; }
+
+.page .innerPart {
+  width: 85%;
+  margin: 0 auto; }
+/*# sourceMappingURL=App.css.map */

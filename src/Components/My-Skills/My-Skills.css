@@ -1,0 +1,22 @@
+
+.mySkill{
+    display: flex;
+    flex-direction: column;
+    /* line-height: 50px; */
+}
+.mySkill .title{
+    color: var(--mark-text);
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+/* sliderga ishlov berishi kerak */
+@media screen and (max-width:980px) {
+    .mySkill {
+        margin-top: 300px;
+        margin-bottom: 50px;
+    }
+    .mySkill .skills{
+        width: 100%!important;
+    }
+}

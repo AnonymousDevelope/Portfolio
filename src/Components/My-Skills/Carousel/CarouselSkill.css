@@ -1,0 +1,15 @@
+.css-1fzpoyk{
+    border: 1px solid none;
+    padding: 20px;
+    border-radius: 1rem;
+    height: max-content;
+    background-color: var(--background-item);
+    backdrop-filter: 0.2;
+    flex-direction: column;
+    cursor: pointer;
+}
+.css-1fzpoyk span{
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 500;
+}

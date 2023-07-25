@@ -1,0 +1,78 @@
+.contacts{
+    display: flex;
+    flex-direction: column;
+}
+.contacts .title{
+    color: var(--mark-text);
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+.contacts .links .col-md a{
+    color: var(--color-text);
+    letter-spacing :.5px;
+}
+.contacts .links .col-md a i[class~="fa-github"]{
+    color:var(--color-text);
+}
+.contacts .links .col-md a i[class~="fa-telegram"]{
+    color:var(--bs-success);
+}
+.contacts .links .col-md a i[class~="fa-instagram"]{
+    color: var(--bs-pink);
+}
+.contacts .links .col-md a i[class~="fa-facebook"]{
+    color: var(--bs-primary);
+}
+.contacts .links .shadow{
+    background:var(--background-item);
+    margin:12px;
+    margin-left:0;
+}
+.contacts .form input{
+    border: none;
+    background: none;
+    /* outline: none; */
+    border-radius: 0!important;
+    /* border-bottom: .5px solid var(--color-text); */
+    color: var(--color-text);
+}
+.contacts .form input::placeholder{
+    color: var(--color-text);
+}
+.contacts .form textarea{
+    border: 0;
+    /* border-bottom:1px solid var(--color-text) ; */
+    border-radius: 0!important;
+    /* box-shadow: 0 0.5px 1px var(--color-text); */
+    background: none;
+    outline: none;
+    color: var(--color-text);
+}
+.contacts .form textarea:focus{
+    /* box-shadow: none; */
+    outline: none;
+    border-color: none;
+}
+.contacts .form textarea::placeholder{
+    color: var(--color-text);
+}
+@media screen and (max-width:980px) {
+    .contacts .col-md-6:first-child .log-for-resp{
+        position: sticky;
+    }
+    .contacts .col-md-6:first-child{
+        overflow-y: auto;
+        height: 400px;
+    }
+    .contacts .col-md-6::-webkit-scrollbar{
+        display: none;
+        background-color: transparent;
+    }
+    .contacts .links .col-md a{
+        text-align: center;
+    }
+    .contacts .links:last-child .col-md:last-child a{
+        font-size: 16px!important;
+    }
+}

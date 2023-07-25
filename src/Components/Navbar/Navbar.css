@@ -1,0 +1,137 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .navbar-brand-1 {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand-1 .brand .first-cl {
+    color: var(--mark-text);
+}
+
+.navbar .navbar-brand-1 .brand .middle-cl {
+    color: var(--color-text);
+}
+
+.navbar ul {
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.navbar ul li .nav-link {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li .active {
+    color: var(--mark-text);
+}
+
+.navbar .open-menu {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+    border: 0;
+    transition: all .3s linear;
+    border-radius: .4rem;
+}
+
+
+.navbar .open-menu .line {
+    background: var(--color-text);
+    width: 36px;
+    height: 4px;
+    margin: 4px 0;
+    transition:all 0.3s linear;
+}
+
+.navbar .open-menu .change:first-child {
+    transform: rotate(45deg) translateY(0.3rem) translateX(3px);        
+}
+
+.navbar .open-menu .change:last-child {
+    transform: rotate(-45deg) translateX(0.3rem) translateY(-4px);
+}
+
+.navbar .open-menu .change:nth-child(2) {
+    display: none;
+}
+
+/* responsive for tablet */
+@media screen and (max-width:10in) {
+    .navbar {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+
+    .navbar .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .navbar_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* responsive for mobile */
+@media screen and (max-width:6.6in) {
+    .navbar {
+        position: relative;
+        transition: all 0.5s linear;
+    }
+
+    .navbar .logo {
+        position: sticky;
+        left: 0;
+        width: max-content;
+    }
+
+    .navbar .navbar_nav {
+        flex-direction: column;
+        align-items: center;
+        background: var(--background);
+        position: absolute;
+        transition: all .5s linear;
+        top: 100%;
+        z-index: 999;
+        height: 0px;
+        overflow-y: hidden;
+    }
+    .navbar .navbar_nav li a{
+        font-size: 25px;
+    } 
+    /* .navbar .navbar_nav:hover{
+    } */
+    .navbar .open-menu {
+        display: flex;
+    }
+
+}

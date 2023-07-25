@@ -1,0 +1,5 @@
+export {default as Navbar} from "./Navbar/Navbar"
+export {default as AboutMe} from "./About-me/About-me"
+export {default as MySkills} from "./My-Skills/My-Skills"
+export {default as MyWorks} from "./MyWorks/MyWorks"
+export {default as Contacts} from "./Contacts/Contacts"
