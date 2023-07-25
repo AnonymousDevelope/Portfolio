@@ -8,7 +8,7 @@
     npm run dev
     
 # Anonymous Developer
-![enter image description here](https://i.ibb.co/LnPsNdB/20230318-124318-01.jpg
-)
+![enter image description here]
+(https://i.ibb.co/LnPsNdB/20230318-124318-01.jpg)
 
  
