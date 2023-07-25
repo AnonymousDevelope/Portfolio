@@ -125,3 +125,8 @@
             width: 100%!important;
         }
 }
+@media screen and (max-width:6.6in) {
+    .planshet{
+        width: 350px!important;
+    }
+}

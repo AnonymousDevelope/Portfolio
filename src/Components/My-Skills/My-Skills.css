@@ -12,10 +12,6 @@
 
 /* sliderga ishlov berishi kerak */
 @media screen and (max-width:980px) {
-    .mySkill {
-        /* margin-top: 300px; */
-        /* margin-bottom: 50px; */
-    }
     .mySkill .skills{
         width: 100%!important;
     }
